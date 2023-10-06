@@ -1,0 +1,11 @@
+<project name="EditXML" default="edit-xml">
+
+    <target name="edit-xml">
+        <property name="xml.file" value="path/to/your/xml/file.xml"/>
+        <property name="search.string" value="old_value"/>
+        <property name="replace.string" value="new_value"/>
+
+        <replace file="${xml.file}" token="${search.string}" value="${replace.string}"/>
+    </target>
+
+</project>
